@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../Quadrature_Demodulation.gen/sources_1/ip/fifo_generator_fft/sim/fifo_generator_fft.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

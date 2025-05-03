@@ -1,0 +1,577 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Mar 26 22:22:30 2024
+# Process ID: 15592
+# Current directory: D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1
+# Command line: vivado.exe -log Quadrature_Demodulation.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Quadrature_Demodulation.tcl
+# Log file: D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/Quadrature_Demodulation.vds
+# Journal file: D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source Quadrature_Demodulation.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/utils_1/imports/synth_1/Quadrature_Demodulation.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/utils_1/imports/synth_1/Quadrature_Demodulation.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Quadrature_Demodulation -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25952
+INFO: [Synth 8-11241] undeclared symbol 'rd_en2', assumed default net type 'wire' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:464]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1345.301 ; gain = 409.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Quadrature_Demodulation' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Quadrature_Demodulation.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Demodulation' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_1' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/dds_compiler_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_1' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/dds_compiler_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DDS_FREQ_CONFIG' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/DDS_FREQ_CONFIG.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DDS_FREQ_CONFIG' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/DDS_FREQ_CONFIG.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SCAN_CONTROL' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/SCAN_CONTROL.v:1]
+	Parameter freq_init bound to: 8'b00011110 
+	Parameter freq_max bound to: 8'b00011110 
+	Parameter freq_min bound to: 8'b00001010 
+INFO: [Synth 8-6155] done synthesizing module 'SCAN_CONTROL' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/SCAN_CONTROL.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HS_AD9481_IN' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/HS_AD9481_IN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'dout' does not match port width (16) of module 'fifo_generator_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/HS_AD9481_IN.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'HS_AD9481_IN' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/HS_AD9481_IN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AD_trans' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/AD_trans.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'AD_trans' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/AD_trans.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fir_compiler_1' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fir_compiler_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_compiler_1' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fir_compiler_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cic_compiler_16bit' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_compiler_16bit_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cic_compiler_16bit' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_compiler_16bit_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_fft' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fifo_generator_fft_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_fft' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fifo_generator_fft_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_fft' is unconnected for instance 'u_fifo_generator_fft' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:206]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_fft' is unconnected for instance 'u_fifo_generator_fft' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:206]
+WARNING: [Synth 8-7023] instance 'u_fifo_generator_fft' of module 'fifo_generator_fft' has 11 connections declared, but only 9 given [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:206]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FFT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FFT_NonRealTIME' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FFT_NonRealTIME.v:1]
+	Parameter Npoint bound to: 4096 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_NonRealTIME' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FFT_NonRealTIME.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bram_16x2048' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/bram_16x2048_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_16x2048' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/bram_16x2048_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FFT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'GET_LineNum_FFT' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_LineNum_FFT.v:1]
+	Parameter threshold bound to: 16'b0000001010111100 
+INFO: [Synth 8-6155] done synthesizing module 'GET_LineNum_FFT' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_LineNum_FFT.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mode_control' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/mode_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mode_control' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/mode_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_1' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_1' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/mult_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c_add_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/c_add_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c_add_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/c_add_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cordic_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cordic_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FM_DEMOD' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FM_DEMOD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FM_DEMOD' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FM_DEMOD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fir_compiler_2' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fir_compiler_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fir_compiler_2' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/fir_compiler_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cic_compiler_0' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cic_compiler_0' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_compiler_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OUPUT_CHOSE' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/OUPUT_CHOSE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OUPUT_CHOSE' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/OUPUT_CHOSE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DA_trans' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/DA_trans.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'DA_trans' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/DA_trans.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GET_Max_Min_Med' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_Max_Min_Med.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GET_Max_Min_Med' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_Max_Min_Med.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cic_14BITS_1250' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_14BITS_1250_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cic_14BITS_1250' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/.Xil/Vivado-15592-Blessing/realtime/cic_14BITS_1250_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'GET_Freq_FFT' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_Freq_FFT.v:1]
+	Parameter FREQ_RSL bound to: 31'b0000000000000000000000000011000 
+	Parameter threshold bound to: 16'b0000001010111100 
+INFO: [Synth 8-6155] done synthesizing module 'GET_Freq_FFT' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/GET_Freq_FFT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Demodulation' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/UART.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK_FRE bound to: 125 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/UART.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Quadrature_Demodulation' (0#1) [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Quadrature_Demodulation.v:1]
+WARNING: [Synth 8-7137] Register data_out_reg_reg in module FM_DEMOD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/FM_DEMOD.v:13]
+WARNING: [Synth 8-3848] Net rd_en2 in module/entity Demodulation does not have driver. [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.srcs/sources_1/new/Demodulation.v:464]
+WARNING: [Synth 8-7129] Port AM_FM_over in module UART is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_en in module GET_Freq_FFT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd_en in module GET_LineNum_FFT is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.398 ; gain = 508.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.398 ; gain = 508.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1444.398 ; gain = 508.574
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1444.398 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_2/fir_compiler_2/fir_compiler_2_in_context.xdc] for cell 'u_Demodulation/LPF_U1_fm'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_2/fir_compiler_2/fir_compiler_2_in_context.xdc] for cell 'u_Demodulation/LPF_U1_fm'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fifo_generator_fft/fifo_generator_fft/fifo_generator_fft_in_context.xdc] for cell 'u_Demodulation/u_fifo_generator_fft'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fifo_generator_fft/fifo_generator_fft/fifo_generator_fft_in_context.xdc] for cell 'u_Demodulation/u_fifo_generator_fft'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_Demodulation/u_HS_AD9481_IN/fifo_16to8_inst'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_Demodulation/u_HS_AD9481_IN/fifo_16to8_inst'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/dds_compiler_1/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_dds'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/dds_compiler_1/dds_compiler_1/dds_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_dds'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_Demodulation/u_MULT_1'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_Demodulation/u_MULT_1'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_Demodulation/u_MULT_2'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'u_Demodulation/u_MULT_2'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_LPF_I'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_LPF_I'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_LPF_Q'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/fir_compiler_1/fir_compiler_1/fir_compiler_1_in_context.xdc] for cell 'u_Demodulation/u_LPF_Q'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/bram_16x2048/bram_16x2048/bram_16x2048_in_context.xdc] for cell 'u_Demodulation/u_FFT_1/u_fft_ram_test'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/bram_16x2048/bram_16x2048/bram_16x2048_in_context.xdc] for cell 'u_Demodulation/u_FFT_1/u_fft_ram_test'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/bram_16x2048/bram_16x2048/bram_16x2048_in_context.xdc] for cell 'u_Demodulation/u_FFT_2/u_fft_ram_test'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/bram_16x2048/bram_16x2048/bram_16x2048_in_context.xdc] for cell 'u_Demodulation/u_FFT_2/u_fft_ram_test'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'u_Demodulation/u_mult_squre_1'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'u_Demodulation/u_mult_squre_1'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'u_Demodulation/u_mult_squre_2'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'u_Demodulation/u_mult_squre_2'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/c_add_0/c_add_0/c_add_0_in_context.xdc] for cell 'u_Demodulation/u_add'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/c_add_0/c_add_0/c_add_0_in_context.xdc] for cell 'u_Demodulation/u_add'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'u_Demodulation/u_sqrt'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'u_Demodulation/u_sqrt'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_14BITS_1250/cic_14BITS_1250/cic_14BITS_1250_in_context.xdc] for cell 'u_Demodulation/u_CIC_FFT_2'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_14BITS_1250/cic_14BITS_1250/cic_14BITS_1250_in_context.xdc] for cell 'u_Demodulation/u_CIC_FFT_2'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_u0'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_u0'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_Demodulation/u_FFT_1/u_FFT_NonRealTIME/u_FFT'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_Demodulation/u_FFT_1/u_FFT_NonRealTIME/u_FFT'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_Demodulation/u_FFT_2/u_FFT_NonRealTIME/u_FFT'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_Demodulation/u_FFT_2/u_FFT_NonRealTIME/u_FFT'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_0/cic_compiler_0/cic_compiler_0_in_context.xdc] for cell 'u_Demodulation/u_CIC_AM'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_0/cic_compiler_0/cic_compiler_0_in_context.xdc] for cell 'u_Demodulation/u_CIC_AM'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_0/cic_compiler_0/cic_compiler_0_in_context.xdc] for cell 'u_Demodulation/u_CIC_FM'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_0/cic_compiler_0/cic_compiler_0_in_context.xdc] for cell 'u_Demodulation/u_CIC_FM'
+Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_16bit/cic_compiler_16bit/cic_compiler_16bit_in_context.xdc] for cell 'u_Demodulation/u_CIC_FFT_1'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/cic_compiler_16bit/cic_compiler_16bit/cic_compiler_16bit_in_context.xdc] for cell 'u_Demodulation/u_CIC_FFT_1'
+Parsing XDC File [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_n'. [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sys_rst_n'. [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc:53]
+Finished Parsing XDC File [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Quadrature_Demodulation_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Quadrature_Demodulation_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Quadrature_Demodulation_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1550.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1550.359 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/LPF_U1_fm' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_CIC_AM' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_CIC_FFT_1' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_CIC_FFT_2' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_CIC_FM' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_LPF_I' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_LPF_Q' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_MULT_1' at clock pin 'CLK' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_MULT_2' at clock pin 'CLK' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_add' at clock pin 'CLK' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_dds' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_mult_squre_1' at clock pin 'CLK' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_mult_squre_2' at clock pin 'CLK' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_sqrt' at clock pin 'aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_FFT_1/u_fft_ram_test' at clock pin 'clkb' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_FFT_2/u_fft_ram_test' at clock pin 'clkb' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_Demodulation/u_HS_AD9481_IN/fifo_16to8_inst' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  d:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/LPF_U1_fm. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_fifo_generator_fft. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_HS_AD9481_IN/fifo_16to8_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_dds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_MULT_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_MULT_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_LPF_I. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_LPF_Q. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_FFT_1/u_fft_ram_test. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_FFT_2/u_fft_ram_test. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_mult_squre_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_mult_squre_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_add. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_sqrt. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_CIC_FFT_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_u0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_FFT_1/u_FFT_NonRealTIME/u_FFT. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_FFT_2/u_FFT_NonRealTIME/u_FFT. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_CIC_AM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_CIC_FM. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_Demodulation/u_CIC_FFT_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                              001
+                 S_START |                             0010 |                              010
+             S_SEND_BYTE |                             0100 |                              011
+                  S_STOP |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                             0000
+                    SEND |                              010 |                             0001
+                    WAIT |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   43 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   14 Bit       Adders := 1     
+	   3 Input   14 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 9     
+	               14 Bit    Registers := 4     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Multipliers : 
+	               5x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 4     
+	   3 Input   14 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 33    
+	   4 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_1/FFT_Amp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: operator u_FFT_1/FFT_Amp0 is absorbed into DSP u_FFT_1/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FFT_2/FFT_Amp0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: operator u_FFT_2/FFT_Amp0 is absorbed into DSP u_FFT_2/FFT_Amp0.
+DSP Report: Generating DSP u_FM_DEMOD/data_out_reg1, operation Mode is: A*B.
+DSP Report: operator u_FM_DEMOD/data_out_reg1 is absorbed into DSP u_FM_DEMOD/data_out_reg1.
+DSP Report: Generating DSP u_FM_DEMOD/data_out_reg0, operation Mode is: PCIN-A*B.
+DSP Report: operator u_FM_DEMOD/data_out_reg0 is absorbed into DSP u_FM_DEMOD/data_out_reg0.
+DSP Report: operator u_FM_DEMOD/data_out_reg1 is absorbed into DSP u_FM_DEMOD/data_out_reg0.
+WARNING: [Synth 8-7129] Port AM_FM_over in module UART is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FFT         | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | (PCIN>>17)+A*B | 18     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | (PCIN>>17)+A*B | 18     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | (PCIN>>17)+A*B | 18     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | (PCIN>>17)+A*B | 18     | 12     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FM_DEMOD    | A*B            | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FM_DEMOD    | PCIN-A*B       | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:35 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:36 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FFT         | A*B           | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN>>17+A*B  | 17     | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN>>17+A*B  | 17     | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN>>17+A*B  | 17     | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | A*B           | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FFT         | PCIN>>17+A*B  | 17     | 18     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FM_DEMOD    | A*B           | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|FM_DEMOD    | (PCIN-(A*B))' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |clk_wiz_0          |         1|
+|2     |dds_compiler_1     |         1|
+|3     |mult_gen_0         |         2|
+|4     |fir_compiler_1     |         2|
+|5     |cic_compiler_16bit |         1|
+|6     |fifo_generator_fft |         1|
+|7     |mult_gen_1         |         2|
+|8     |c_add_0            |         1|
+|9     |cordic_0           |         1|
+|10    |fir_compiler_2     |         1|
+|11    |cic_compiler_0     |         2|
+|12    |cic_14BITS_1250    |         1|
+|13    |bram_16x2048       |         2|
+|14    |xfft_0             |         2|
+|15    |fifo_generator_0   |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |bram_16x2048       |     2|
+|3     |c_add              |     1|
+|4     |cic_14BITS         |     1|
+|5     |cic_compiler       |     1|
+|6     |cic_compiler_0     |     1|
+|7     |cic_compiler_16bit |     1|
+|8     |clk_wiz            |     1|
+|9     |cordic             |     1|
+|10    |dds_compiler       |     1|
+|11    |fifo_generator     |     1|
+|12    |fifo_generator_fft |     1|
+|13    |fir_compiler       |     1|
+|14    |fir_compiler_1     |     1|
+|15    |fir_compiler       |     1|
+|16    |mult_gen           |     1|
+|17    |mult_gen_0         |     1|
+|18    |mult_gen           |     1|
+|19    |mult_gen_1         |     1|
+|20    |xfft               |     1|
+|21    |xfft_0             |     1|
+|22    |BUFG               |     2|
+|23    |CARRY4             |   102|
+|24    |DSP48E1            |    14|
+|26    |LUT1               |    30|
+|27    |LUT2               |   212|
+|28    |LUT3               |   117|
+|29    |LUT4               |   178|
+|30    |LUT5               |   112|
+|31    |LUT6               |   146|
+|32    |MUXF7              |     1|
+|33    |FDCE               |   370|
+|34    |FDPE               |    17|
+|35    |FDRE               |    17|
+|36    |IBUF               |    19|
+|37    |OBUF               |    18|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 1551.250 ; gain = 508.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:41 . Memory (MB): peak = 1551.250 ; gain = 615.426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1551.250 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 117 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1555.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ec869b10
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:46 . Memory (MB): peak = 1555.371 ; gain = 1066.734
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Project/200t/Quadrature_Demodulation/Quadrature_Demodulation.runs/synth_1/Quadrature_Demodulation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Quadrature_Demodulation_utilization_synth.rpt -pb Quadrature_Demodulation_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 22:23:25 2024...

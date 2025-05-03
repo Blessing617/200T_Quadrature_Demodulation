@@ -1,0 +1,2 @@
+cic_14BITS_1250.vhd,vhdl,xil_defaultlib,../../../../Quadrature_Demodulation.gen/sources_1/ip/cic_14BITS_1250/sim/cic_14BITS_1250.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

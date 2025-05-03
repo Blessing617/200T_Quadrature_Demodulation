@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../Quadrature_Demodulation.gen/sources_1/ip/cic_14BITS_1250/sim/cic_14BITS_1250.vhd" \
+
+# Do not sort compile order
+nosort

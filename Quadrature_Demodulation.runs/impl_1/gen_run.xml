@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a200tfbg484-1" LaunchTime="1711462947">
+  <File Type="ROUTE-PWR" Name="Quadrature_Demodulation_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Quadrature_Demodulation.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Quadrature_Demodulation_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Quadrature_Demodulation_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="Quadrature_Demodulation_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="Quadrature_Demodulation.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Quadrature_Demodulation_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Quadrature_Demodulation_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Quadrature_Demodulation_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Quadrature_Demodulation_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Quadrature_Demodulation_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Quadrature_Demodulation.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Quadrature_Demodulation_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Quadrature_Demodulation_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Quadrature_Demodulation_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Quadrature_Demodulation_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Quadrature_Demodulation_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Quadrature_Demodulation_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Quadrature_Demodulation_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Quadrature_Demodulation_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Quadrature_Demodulation_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Quadrature_Demodulation_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Quadrature_Demodulation_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Quadrature_Demodulation.bin"/>
+  <File Type="PLACE-TIMING" Name="Quadrature_Demodulation_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Quadrature_Demodulation_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Quadrature_Demodulation_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Quadrature_Demodulation_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Quadrature_Demodulation.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Quadrature_Demodulation_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Quadrature_Demodulation_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Quadrature_Demodulation_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Quadrature_Demodulation.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Quadrature_Demodulation_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Quadrature_Demodulation_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Quadrature_Demodulation_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Quadrature_Demodulation_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Quadrature_Demodulation_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Quadrature_Demodulation_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Quadrature_Demodulation_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Quadrature_Demodulation_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Quadrature_Demodulation_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Quadrature_Demodulation_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Quadrature_Demodulation_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Quadrature_Demodulation_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Quadrature_Demodulation_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Quadrature_Demodulation_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Quadrature_Demodulation_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Quadrature_Demodulation_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Quadrature_Demodulation_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Quadrature_Demodulation_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Quadrature_Demodulation_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Quadrature_Demodulation_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Quadrature_Demodulation_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Quadrature_Demodulation_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Quadrature_Demodulation_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Quadrature_Demodulation_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Quadrature_Demodulation_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Quadrature_Demodulation_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Quadrature_Demodulation_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Quadrature_Demodulation.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Quadrature_Demodulation_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Quadrature_Demodulation_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Quadrature_Demodulation.nky"/>
+  <File Type="BITSTR-BMM" Name="Quadrature_Demodulation_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Quadrature_Demodulation.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Quadrature_Demodulation_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Quadrature_Demodulation_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Quadrature_Demodulation.rcfi"/>
+  <File Type="CFI_FILE" Name="Quadrature_Demodulation.cfi"/>
+  <File Type="RNPI_FILE" Name="Quadrature_Demodulation.rnpi"/>
+  <File Type="NPI_FILE" Name="Quadrature_Demodulation.npi"/>
+  <File Type="RBD_FILE" Name="Quadrature_Demodulation.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Quadrature_Demodulation.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Quadrature_Demodulation.sysdef"/>
+  <File Type="BG-BGN" Name="Quadrature_Demodulation.bgn"/>
+  <File Type="BG-DRC" Name="Quadrature_Demodulation.drc"/>
+  <File Type="RDI-RDI" Name="Quadrature_Demodulation.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="Quadrature_Demodulation_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Quadrature_Demodulation_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/fir_compiler_2/fir_compiler_2.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_generator_fft/fifo_generator_fft.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AD_trans.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DA_trans.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DDS_FREQ_CONFIG.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Demodulation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FFT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FFT_NonRealTIME.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FM_DEMOD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GET_Freq_FFT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GET_LineNum_FFT.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GET_Max_Min_Med.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HS_AD9481_IN.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/OUPUT_CHOSE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SCAN_CONTROL.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UART.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mode_control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Quadrature_Demodulation.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/COE/LPF_FIR_125M.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/COE/BLACK_30TH.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Quadrature_Demodulation"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Quadrature_Demodulation.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/Quadrature_Demodulation.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Quadrature_Demodulation.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="cordic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="fir_compiler_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_generator_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dds_compiler_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="cic_compiler_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bram_16x2048"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="c_add_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cic_14BITS_1250"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="xfft_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="cic_compiler_16bit"/>
+</GenRun>
