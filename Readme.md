@@ -17,6 +17,6 @@
   * 2. ReadMe-图片集.pptx为详细原理说明.
   * 3. 芯片型号xc7a200tfbg484-1,Xilinx(赛灵思)FPGA开发板.
   * 4. UART_Quadrature_Demodulation文件夹下为STM32F103C8T6单片机串口通信代码.
-  * 5. UART_Quadrature_Demodulation\信号调制度检测装置.HMI为对应串口屏工程.
+  * 5. UART_Quadrature_Demodulation\正交解调.HMI为对应串口屏工程.
   ******************************************************************************
   */
